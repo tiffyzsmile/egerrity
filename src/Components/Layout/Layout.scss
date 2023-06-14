@@ -1,0 +1,22 @@
+.content-max {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+}
+
+.page-content {
+  background-color: #fff;
+  flex: auto;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  @media all and (min-width: 768px) {
+    padding-top: 80px;
+  }
+
+  .content-max {
+    @media all and (max-width: 1440px) {
+      padding: 0 24px;
+    }
+  }
+}

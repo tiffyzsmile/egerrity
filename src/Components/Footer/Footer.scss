@@ -1,0 +1,17 @@
+.footer {
+  padding-top: 170px;
+  padding-bottom: 40px;
+  background-color: var(--bg-primary);
+  border-top: solid 1px var(--bg-accent-stroke);
+  max-height: 225px;
+  ul {
+    list-style-type: none;
+    li {
+      display: inline-block;
+      margin-right: 48px;
+    }
+  }
+  .contact {
+    float: right;
+  }
+}

@@ -1,0 +1,30 @@
+.accent-bar {
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  margin: 24px 0;
+  flex: 1;
+  .line {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    border: 1px solid #000000;
+  }
+  .content {
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    font-size: 0.75rem;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0 0 0 24px;
+      li {
+        display: inline-block;
+        padding-right: 24px;
+      }
+    }
+  }
+}

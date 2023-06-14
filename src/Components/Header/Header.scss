@@ -1,0 +1,121 @@
+.header {
+  width: 100%;
+  background-color: #fff;
+  .logo {
+    max-width: 280px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: inline-block;
+  }
+}
+
+/****** START: TOP-NAV ******/
+
+/***** MAIN NAV STYLES *****/
+.toggleInput {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+}
+
+@media all and (max-width: 768px) {
+  .navToggleMain {
+    display: block;
+    float: right;
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #7e57b9;
+  }
+  .toggleInput {
+    &:not(:checked) {
+      /* top-nav closed - hide menu open header */
+      /* top-nav closed - hide menu content */
+      ~ {
+        label.openHeader,
+        .top-nav-container {
+          display: none;
+        }
+      }
+    }
+    &:checked {
+      /* top-nav open - hide menu closed header */
+      /* top-nav open - show menu content */
+      ~ {
+        label.closedHeader {
+          display: none;
+        }
+        .top-nav-container {
+          display: block;
+        }
+      }
+    }
+  }
+
+  /* mobile menu */
+  .top-nav-container {
+    background-color: #7e57b9;
+    overflow: hidden;
+    margin: 0;
+    clear: both;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        position: relative;
+        list-style: none;
+        overflow: hidden;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        a {
+          padding: 15px 2%;
+          text-decoration: none;
+          display: inline-block;
+          width: 96%;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .navToggleMain {
+    display: none;
+  }
+  /* Navigation */
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+    .top-nav-container {
+      float: right;
+      margin-right: 48px;
+      padding-top: 17.5px;
+    }
+
+    ul {
+      display: block;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        position: relative;
+        a {
+          color: #333;
+          padding: 16px;
+          display: block;
+          text-decoration: none;
+          font-size: 0.875rem;
+          &.active {
+            border-bottom: solid 3px #000;
+          }
+        }
+      }
+    }
+  }
+}

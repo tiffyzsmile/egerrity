@@ -1,0 +1,20 @@
+.portfolio-item {
+  .feature-image {
+    width: 100%;
+  }
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-family: "Open Sans";
+    margin-bottom: 16px;
+  }
+  p {
+    font-size: 0.875rem;
+    color: #605d79;
+    line-height: 1.188rem;
+  }
+  .tags {
+    clear: both;
+    margin-top: 24px;
+  }
+}
