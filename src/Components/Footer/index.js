@@ -17,7 +17,9 @@ const Footer = () => {
               <Link to="/experience">Experience</Link>
             </li>
             <li>
-              <a href="/emily-gerrity-resume-0322.pdf">Resume</a>
+              <Link to="/emily-gerrity-resume-0322.pdf" target="_blank">
+                Resume
+              </Link>
             </li>
           </ul>
         </nav>

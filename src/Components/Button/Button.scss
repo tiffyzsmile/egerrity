@@ -13,8 +13,13 @@
   font-size: 1.25rem;
   line-height: 1.688rem;
   svg {
-    padding-right: 6px;
     max-height: 15px;
+    &.start {
+      padding-right: 6px;
+    }
+    &.end {
+      padding-left: 6px;
+    }
   }
   &.primary {
     background: #000000;

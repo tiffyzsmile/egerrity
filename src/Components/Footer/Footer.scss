@@ -1,17 +1,59 @@
 .footer {
-  padding-top: 170px;
   padding-bottom: 40px;
   background-color: var(--bg-primary);
   border-top: solid 1px var(--bg-accent-stroke);
-  max-height: 225px;
+
+  @media all and (max-width: 1440px) {
+    padding-top: 25px;
+  }
+  @media all and (min-width: 1440px) {
+    max-height: 225px;
+    padding-top: 170px;
+  }
+  nav {
+    @media all and (max-width: 1440px) {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    @media all and (min-width: 1440px) {
+      width: 50%;
+      float: left;
+      padding-left: 48px;
+    }
+  }
   ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    @media all and (max-width: 1440px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
     li {
       display: inline-block;
-      margin-right: 48px;
+
+      @media all and (min-width: 1440px) {
+        margin-right: 48px;
+      }
+
+      a {
+        color: #605d79;
+        font-weight: 600;
+      }
     }
   }
   .contact {
-    float: right;
+    @media all and (max-width: 1440px) {
+      width: 100%;
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    @media all and (min-width: 1440px) {
+      float: right;
+      padding-right: 48px;
+    }
   }
 }

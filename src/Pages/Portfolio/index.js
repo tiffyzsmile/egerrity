@@ -8,12 +8,14 @@ import PolicePhoneContacts from "./images/10-21-police-phone-contacts.png";
 import "./Portfolio.scss";
 import PortfolioItem from "./Components/PortfolioItem";
 import React from "react";
+import Button from "../../Components/Button";
+import PageTitle from "../../Components/PageTitle";
 
 const Portfolio = () => {
   return (
     <div className="portfolio">
       <div className="content-max">
-        <h1>Portfolio</h1>
+        <PageTitle>✏️ Portfolio</PageTitle>
         <Card>
           <Tag>Design Systems</Tag> <Tag>Figma</Tag> <Tag>Accessibility</Tag>
           <Tag>Documentation</Tag> <Tag>Research</Tag>
@@ -24,6 +26,20 @@ const Portfolio = () => {
             that enables designers and engineers to work accurately and
             efficiently
           </p>
+          <Button
+            type="primary"
+            target="_blank"
+            href="/case-studies/margarita.pdf"
+          >
+            View Case Study
+          </Button>
+          <Button
+            type="secondary"
+            target="_blank"
+            href="/case-studies/margarita.pdf"
+          >
+            Sample Figma File
+          </Button>
         </Card>
         <div className="portfolio-items">
           <PortfolioItem

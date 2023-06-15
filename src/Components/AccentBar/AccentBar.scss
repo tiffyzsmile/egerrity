@@ -1,10 +1,15 @@
 .accent-bar {
   width: 100%;
-  position: absolute;
-  bottom: 5px;
+  position: relative;
   text-align: center;
-  margin: 24px 0;
-  flex: 1;
+  //flex: 1;
+  margin: 50px 0;
+
+  @media all and (min-width: 768px) {
+    position: absolute;
+    bottom: 5px;
+    margin: 24px 0;
+  }
   .line {
     position: absolute;
     width: 100%;
@@ -17,6 +22,10 @@
     position: relative;
     margin: 0 auto;
     font-size: 0.75rem;
+
+    @media all and (max-width: 500px) {
+      max-width: 80%;
+    }
     ul {
       list-style-type: none;
       margin: 0;

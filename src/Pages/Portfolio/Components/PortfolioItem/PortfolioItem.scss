@@ -1,4 +1,13 @@
 .portfolio-item {
+  @media all and (min-width: 768px) {
+    width: 49%;
+    float: left;
+    clear: left;
+    &:nth-child(2n) {
+      float: right;
+      clear: right;
+    }
+  }
   .feature-image {
     width: 100%;
   }

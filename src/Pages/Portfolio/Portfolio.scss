@@ -3,9 +3,9 @@
   padding-top: 25px;
   .portfolio-items {
     @media all and (min-width: 768px) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
+      //display: flex;
+      //flex-direction: row;
+      //gap: 24px;
     }
   }
 }

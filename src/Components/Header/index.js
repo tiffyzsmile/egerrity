@@ -1,6 +1,8 @@
 import logo from "./logo.png";
 import "./Header.scss";
 import { Link, NavLink } from "react-router-dom";
+import Hamburger from "../Icons/Hamburger";
+import Close from "../Icons/Close";
 
 const Header = () => {
   return (
@@ -20,13 +22,13 @@ const Header = () => {
             htmlFor="navToggleMain"
             className="closedHeader navToggleMain less"
           >
-            <i className="fas fa-bars"></i>
+            <Hamburger />
           </label>
           <label
             htmlFor="navToggleMain"
             className="openHeader navToggleMain more"
           >
-            <i className="fas fa-times"></i>
+            <Close />
           </label>
 
           <div className="top-nav-container">
@@ -56,7 +58,9 @@ const Header = () => {
                 </NavLink>
               </li>
               <li>
-                <a href="/emily-gerrity-resume-0322.pdf">Resume</a>
+                <Link to="/emily-gerrity-resume-0322.pdf" target="_blank">
+                  Resume
+                </Link>
               </li>
             </ul>
           </div>
