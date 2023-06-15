@@ -14,12 +14,16 @@ import PageTitle from "../../Components/PageTitle";
 const Portfolio = () => {
   return (
     <div className="portfolio">
+      <div className="bg1"></div>
+      <div className="bg2"></div>
       <div className="content-max">
         <PageTitle>✏️ Portfolio</PageTitle>
-        <Card>
-          <Tag>Design Systems</Tag> <Tag>Figma</Tag> <Tag>Accessibility</Tag>
-          <Tag>Documentation</Tag> <Tag>Research</Tag>
-          <Tag>Product Management</Tag>
+        <Card className="hero">
+          <div className="tags">
+            <Tag>Design Systems</Tag> <Tag>Figma</Tag> <Tag>Accessibility</Tag>
+            <Tag>Documentation</Tag> <Tag>Research</Tag>
+            <Tag>Product Management</Tag>
+          </div>
           <h1>Margarita Design System</h1>
           <p>
             Designing both a process and system from planning through execution
@@ -59,8 +63,7 @@ const Portfolio = () => {
             image={UpsideMobileApp}
             href="/case-studies/upside-mobile-app.pdf"
             title="Upside Business Travel App • Self Service"
-            description="Upside's mobile app was developed as a convenient way to plan, book, and
-        manage business trips."
+            description="A series of projects that I worked on to empower users and relieve customer service workers by allowing users to self service in a number of areas."
             tags={[
               "Research",
               "Competitive Analysis",

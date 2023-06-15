@@ -1,0 +1,88 @@
+.experience {
+  background-color: var(--bg-primary);
+  padding: 25px 0;
+  flex: 1;
+  .bg1 {
+    position: absolute;
+    width: 695px;
+    height: 709px;
+    left: -300px;
+    top: 350px;
+
+    opacity: 0.5;
+    background: linear-gradient(
+      180deg,
+      #ff08ab 0%,
+      rgba(245, 138, 37, 0) 100%,
+      rgba(112, 97, 163, 0) 100%
+    );
+
+    filter: blur(50px);
+    transform: rotate(23.02deg);
+  }
+  .bg2 {
+    position: absolute;
+    width: 485.02px;
+    height: 572px;
+    left: 1366.06px;
+    top: 250px;
+
+    opacity: 0.5;
+
+    background: linear-gradient(
+      180deg,
+      rgba(0, 194, 255, 0.44) 0%,
+      #b40463 100%
+    );
+
+    filter: blur(100px);
+    transform: rotate(45deg);
+  }
+  .card.experience {
+    max-width: 850px;
+    margin: 0 auto 48px;
+    padding: 24px;
+    @media all and (min-width: 768px) {
+      padding: 64px;
+    }
+    &.closed {
+      @media all and (min-width: 768px) {
+        padding: 24px 64px;
+      }
+    }
+    h1 {
+      font-size: 1.5rem;
+      line-height: 2.063rem;
+      letter-spacing: 0.0022em;
+      margin-bottom: 12px;
+
+      @media all and (min-width: 768px) {
+        font-size: 2.25rem;
+        line-height: 2.813rem;
+      }
+    }
+    .company,
+    .date {
+      font-size: 0.875rem;
+      color: #605d79;
+      margin: 0 0 4px;
+      padding: 0;
+    }
+    .role {
+      font-style: italic;
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
+    ul {
+      font-family: Merriweather;
+      margin-top: 40px;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      li {
+        &:not(:last-child) {
+          padding-bottom: 48px;
+        }
+      }
+    }
+  }
+}

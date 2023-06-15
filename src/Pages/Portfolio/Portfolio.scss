@@ -1,7 +1,52 @@
 .portfolio {
   background-color: var(--bg-primary);
   padding-top: 25px;
+  .bg1 {
+    position: absolute;
+    width: 695px;
+    height: 709px;
+    left: -300px;
+    top: 300px;
+
+    opacity: 0.2;
+    transform: rotate(180deg);
+    background: linear-gradient(
+      180deg,
+      #ff08ab 0%,
+      rgba(245, 138, 37, 0) 100%,
+      rgba(112, 97, 163, 0) 100%
+    );
+    filter: blur(50px);
+    transform: rotate(180deg);
+  }
+  .bg2 {
+    width: 660px;
+    height: 773px;
+    position: absolute;
+    left: 41.42%;
+    right: -41.42%;
+    top: 0%;
+    bottom: 0%;
+    left: 1208.3px;
+    top: 938px;
+
+    opacity: 0.2;
+
+    /* gradient/purple */
+
+    background: linear-gradient(
+      180deg,
+      rgba(0, 194, 255, 0.44) 0%,
+      #b40463 100%
+    );
+    /* gradient/purple */
+
+    filter: blur(100px);
+    transform: rotate(20.56deg);
+  }
   .portfolio-items {
+    position: relative;
+    z-index: 5;
     @media all and (min-width: 768px) {
       //display: flex;
       //flex-direction: row;

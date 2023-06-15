@@ -19,7 +19,7 @@ body {
 
 .page {
   min-height: 100vh;
-  overflow: auto;
+  overflow: hidden auto;
   position: relative;
   width: 100%;
   display: flex;

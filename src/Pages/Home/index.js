@@ -19,7 +19,7 @@ const Home = () => {
                 💕 Passionate about empowering designers and engineers to build
                 experiences without friction
               </li>
-              <li> 👨‍💻 Experienced in end-to-end product design</li>
+              <li>👨‍💻 Experienced in end-to-end product design</li>
               <li>
                 🔨 The person you want helping you building your Figma libraries
               </li>
@@ -27,7 +27,7 @@ const Home = () => {
                 🧑‍🤝‍🧑 A proponent of nurturing better relationships between
                 engineering and design
               </li>
-              <li> 📈 Empathetic, analytical, and forward thinking</li>
+              <li>📈 Empathetic, analytical, and forward thinking</li>
             </ul>
             <Button href="/portfolio">
               <Flower color="white" className="start" />

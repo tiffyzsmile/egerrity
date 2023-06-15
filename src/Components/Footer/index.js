@@ -1,5 +1,5 @@
 import "./Footer.scss";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -8,13 +8,28 @@ const Footer = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <NavLink
+                className={({ isActive }) => (isActive ? "active" : "")}
+                to="/"
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <Link to="/portfolio">Portfolio</Link>
+              <NavLink
+                className={({ isActive }) => (isActive ? "active" : "")}
+                to="/portfolio"
+              >
+                Portfolio
+              </NavLink>
             </li>
             <li>
-              <Link to="/experience">Experience</Link>
+              <NavLink
+                className={({ isActive }) => (isActive ? "active" : "")}
+                to="/experience"
+              >
+                Experience
+              </NavLink>
             </li>
             <li>
               <Link to="/emily-gerrity-resume-0322.pdf" target="_blank">
@@ -23,7 +38,10 @@ const Footer = () => {
             </li>
           </ul>
         </nav>
-        <div className="contact">ergerrity@gmail.com • (440) 667-9749</div>
+        <div className="contact">
+          <a href="mailto:ergerrity@gmail.com">ergerrity@gmail.com</a> • (440)
+          667-9749
+        </div>
       </div>
     </footer>
   );
